@@ -1,6 +1,6 @@
 # nerd_project
 
-## Proyecto **creado con mi maravillosa mente,** y Google Gemini. 
+## Proyecto *creado con mi maravillosa mente,* y Google Gemini. 
 
 El *pront* ha sido tan sencillo como mostrar una imagen y pedir que generáse un sitio web simulando la imagen mostrada, y que para ello utilizase tan solo *HTML, CSS y JavaScript*.
 
