@@ -1,0 +1,120 @@
+/* Estilo general y fondo oscuro */
+body {
+    background-color: #0b111e; /* Fondo liso y muy oscuro */
+    color: #f8f8f2; /* Color de texto base claro */
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace; /* Fuente estilo código */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea al inicio para dejar espacio si hay otros elementos */
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px; /* Padding para que no esté pegado a los bordes */
+    box-sizing: border-box;
+}
+
+/* Contenedor principal de la "ventana del editor" */
+.code-editor-window {
+    width: 80%; /* O el ancho que prefieras */
+    max-width: 900px;
+    background-color: #1e1e1e; /* Color oscuro del editor */
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada */
+    overflow: hidden;
+    border: 1px solid #3c3c3c; /* Borde sutil */
+}
+
+/* Encabezado del editor (barra superior) */
+.editor-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #2c2c2c;
+    border-bottom: 1px solid #3c3c3c;
+    position: relative;
+    justify-content: space-between; /* Para espaciar los elementos */
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.file-name {
+    font-size: 1em;
+    color: #cccccc;
+    flex-grow: 1; /* Para que el nombre del archivo ocupe el espacio central */
+    text-align: center;
+}
+
+.header-icons {
+    color: #cccccc;
+    font-size: 1.2em;
+}
+
+/* Cuerpo del editor (donde va el contenido principal) */
+.editor-body {
+    padding: 20px 0; /* Padding vertical, horizontal se manejará dentro del pre */
+}
+
+.code-content {
+    margin: 0;
+    padding-left: 20px; /* Espacio para los números de línea */
+    white-space: pre-wrap; /* Mantiene saltos de línea y espacios */
+    line-height: 1.6;
+    font-size: 0.95em;
+    color: #f8f8f2;
+}
+
+/* Estilos para simular la sintaxis de código */
+.line-number {
+    display: inline-block;
+    width: 30px; /* Ancho fijo para los números de línea */
+    text-align: right;
+    margin-right: 15px;
+    color: #6a6a6a; /* Color tenue para los números */
+    user-select: none; /* No permite seleccionar los números */
+}
+
+/* Colores de sintaxis para HTML (ejemplos) */
+.element-tag {
+    color: #569cd6; /* Azul para etiquetas HTML */
+}
+
+.string {
+    color: #ce9178; /* Naranja para cadenas de texto */
+}
+
+.comment {
+    color: #6a9955; /* Verde para comentarios */
+    font-style: italic;
+}
+
+.a href {
+        color: #ce9178; /* Naranja para cadenas de texto */
+
+}
+
+/* Colores de sintaxis JSON (ejemplos) */
+.json-like-content {
+    margin-top: 20px;
+    border-top: 1px dashed #3c3c3c;
+    padding-top: 20px;
+}
+
+.json-key {
+    color: #c586c0; /* Púrpura para las claves JSON */
+}
+
+.json-value {
+    color: #dcdcaa; /* Amarillo para los valores JSON */
+}
